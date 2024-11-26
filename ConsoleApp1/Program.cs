@@ -6,14 +6,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int[,] array = { { 6, 9, 4 }, { 7, 2, 4 }, { 4, 8, 3 } };
-            int rowSum = 0;
-
-            for (int j = 0; j < array.GetLength(1); j++)
-            {
-                rowSum += array[1, j];
-            }
-            Console.WriteLine(rowSum);
+            double x7 = -2;
+            double result7 = 3 * Math.Pow(x7,3) + 4 * Math.Pow(x7,2) - 2 * x7 + 7;
+            Console.WriteLine(result7);
         }
     }
 }
