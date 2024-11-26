@@ -6,19 +6,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string text = File.ReadAllText(@"C:\DataSprint5\InPutDataFileTask4V0.txt");
-            string[] strings = text.Split(',');
-            List<string> oddNumbers = new List<string>();
-            foreach (string str in strings)
+            string content = "SDNsSA2KgDNJ5ShAJN3DNA6SJ";
+            string newContent = "";
+            foreach (char c in content)
             {
-                if (int.TryParse(str.Trim(), out int number) && number % 3 == 0)
+                if (!char.IsUpper(c))
                 {
-                    oddNumbers.Add(str);
+                    newContent += c;
                 }
-
             }
-            File.WriteAllLines(@"C:\DataSprint5\InPutDataFileTask4V0.txt", oddNumbers);
-            Console.WriteLine(String.Join("\n", oddNumbers));
+            Console.WriteLine(newContent);
         }
     }
 }
