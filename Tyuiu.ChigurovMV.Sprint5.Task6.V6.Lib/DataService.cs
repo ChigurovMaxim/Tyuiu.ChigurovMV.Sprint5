@@ -11,13 +11,13 @@ namespace Tyuiu.ChigurovMV.Sprint5.Task6.V6.Lib
             int count = 0;
             string str = File.ReadAllText(@"C:\DataSprint5\InPutDataFileTask6V6.txt");
             string result = "";
-
             foreach (char c in str)
             {
                 if (char.IsLower(c) && (Regex.IsMatch(Convert.ToString(c), @"\p{IsCyrillic}")))
                 {
                     count += 1;
                 }
+   
             }
             return count;
         }
