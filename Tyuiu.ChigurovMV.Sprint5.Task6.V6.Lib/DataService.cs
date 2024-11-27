@@ -9,7 +9,7 @@ namespace Tyuiu.ChigurovMV.Sprint5.Task6.V6.Lib
         public int LoadFromDataFile(string path)
         {
             int count = 0;
-            string str = File.ReadAllText(@"C:\DataSprint5\InPutDataFileTask6V6.txt");
+            string str = File.ReadAllText(path);
             string result = "";
             foreach (char c in str)
             {
