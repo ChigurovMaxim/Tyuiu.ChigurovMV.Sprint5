@@ -9,7 +9,7 @@ namespace Tyuiu.ChigurovMV.Sprint5.Task7.V24.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string pathSaveFile = @"C:\DataSprint5\OutPutFileTask7V24.txt";
+            string pathSaveFile = @"C:\DataSprint5\OutPutDataFileTask7V24.txt";
             FileInfo fileInfo = new FileInfo(pathSaveFile);
             if (fileInfo.Exists)
             {
