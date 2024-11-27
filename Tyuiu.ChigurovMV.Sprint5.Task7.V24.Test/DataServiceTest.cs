@@ -6,7 +6,7 @@ namespace Tyuiu.ChigurovMV.Sprint5.Task7.V24.Test
         [TestMethod]
         public void CheckFileExists()
         {
-            string path = @"C:\DataSprint5\OutPutDataFileTask7V24.txt";
+            string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutDataFileTask7V24.txt" });
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             Assert.AreEqual(true, fileExists);
