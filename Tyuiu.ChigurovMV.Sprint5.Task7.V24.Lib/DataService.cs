@@ -16,7 +16,6 @@ namespace Tyuiu.ChigurovMV.Sprint5.Task7.V24.Lib
                 File.Delete(pathSaveFile);
             }
             string str = File.ReadAllText(path);
-            string[] words = str.Split(' ');
             string pattern = @"\b([а-яА-ЯёЁ]+)\b";
             string result = Regex.Replace(str, pattern, "слово");
             File.WriteAllText(pathSaveFile, result);
