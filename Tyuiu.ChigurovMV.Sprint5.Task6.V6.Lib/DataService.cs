@@ -10,7 +10,6 @@ namespace Tyuiu.ChigurovMV.Sprint5.Task6.V6.Lib
         {
             int count = 0;
             string str = File.ReadAllText(path);
-            string result = "";
             foreach (char c in str)
             {
                 if (char.IsLower(c) && (Regex.IsMatch(Convert.ToString(c), @"\p{IsCyrillic}")))
